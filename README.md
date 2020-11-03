@@ -1,6 +1,6 @@
 # frontend-AllezCine
 
-## Plan de logique
+## Plan du site
 
 - Sections
 - Nav
