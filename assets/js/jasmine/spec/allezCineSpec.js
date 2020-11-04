@@ -1,4 +1,4 @@
-describe("on load", () => {
+xdescribe("on load", () => {
   it("should populate the jumbotron with movie datas", () => {
     //jumbotron
   });
@@ -20,6 +20,15 @@ describe("on click on register", () => {
 describe("on click on login", () => {
   it("should display a pop-up with a login form", () => {
     expect();
+  });
+});
+
+xdescribe("on scroll from the top of the page", () => {
+  it("should create the arrow button", () => {
+    window.pageYOffset = 200;
+    expect(arrowToTop.style.display).toEqual("block");
+    window.pageYOffset = 0;
+    expect(arrowToTop.style.display).toEqual("none");
   });
 });
 
