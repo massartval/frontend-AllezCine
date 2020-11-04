@@ -15,3 +15,5 @@
 
 - API The Movie Database
   https://developers.themoviedb.org/3/getting-started/introduction
+
+## Plan de test Jasmine
