@@ -13,11 +13,29 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
+  <!-- These styles are here to help highlight
+          the rows and columns to help visualise 
+          how Bootstrap 4 renders them -->
+  <style>
+    .row {
+      border: 1px solid #7451eb;
+      padding: 3px;
+    }
+    [class^="col"] {
+      padding: 1rem;
+      border: 2px solid #3fa5db;
+    }
+  </style>
+
   <body>
+    <!-- Jumbotron -->
     <header class="jumbotron-fluid">
       <div class="container">
+        <!-- Top -->
         <div class="row">
-          <div class="col-3"><h1>allezcine</h1></div>
+          <div class="col-3">
+            <h1>allezcine</h1>
+          </div>
           <div class="col-3 droppdown">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -26,12 +44,15 @@
               <a class="dropdown-item" href="#">Western</a>
               <a class="dropdown-item" href="#">Fiction</a>
             </div>
-            <div class="col-3">contact</div>
-            <div class="col-3">
-              <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="search site" />
-            </div>
+          </div>
+          <div class="col-3">
+            <span>contact</span>
+          </div>
+          <div class="col-3">
+            <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="search site" />
           </div>
         </div>
+        <!-- Main -->
         <div class="row">
           <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
             <ol class="carousel-indicators">
@@ -69,6 +90,7 @@
             </a>
           </div>
         </div>
+        <!-- Bottom -->>
         <div class="row">
           <div class="col-4">
             <i class="fas fa-phone-square-alt">(+000) 009 455 4068</i>
@@ -78,6 +100,9 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <!-- Main content -->
+    <main>
+      <div class="container"></div>
+    </main>
   </body>
 </html>
