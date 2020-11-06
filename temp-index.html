@@ -17,6 +17,11 @@
           the rows and columns to help visualise 
           how Bootstrap 4 renders them -->
   <style>
+
+    [class^="container"] {
+      border: 1px solid #999999;
+      padding: 3px;
+    }
     .row {
       border: 1px solid #7451eb;
       padding: 3px;
@@ -25,12 +30,19 @@
       padding: 1rem;
       border: 2px solid #3fa5db;
     }
+    .card {
+      border: 1px solid #e1eb51;
+      padding: 3px;
+    }
+    .card-body {
+      background-color: #999999;
+    }
   </style>
 
   <body>
     <!-- Jumbotron -->
     <header class="jumbotron-fluid">
-      <div class="container">
+      <div class="container-fluid">
         <!-- Top -->
         <div class="row">
           <div class="col-3">
@@ -90,7 +102,7 @@
             </a>
           </div>
         </div>
-        <!-- Bottom -->>
+        <!-- Bottom -->
         <div class="row">
           <div class="col-4">
             <i class="fas fa-phone-square-alt">(+000) 009 455 4068</i>
@@ -102,7 +114,432 @@
     </header>
     <!-- Main content -->
     <main>
-      <div class="container"></div>
+      <!-- Top row -->
+      <section class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured movies -->
+      <section class="container">
+        <div class="row">
+          <div class="col">
+            <h2>featured movies</h2>
+          </div>
+        </div>
+        <!-- Categories -->
+        <div class="row">
+          <div class="col-4">
+            <button class="btn">All</buton>
+            <button class="btn">Action</buton>
+            <button class="btn">Police</buton>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>          
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>   
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>       
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>          
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>   
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>       
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="" alt="" />
+              </div>
+              <div class="card-footer">
+                <h6 class="card-title">title</h6>
+                <p class="card-text">date</p>
+                <p class="card-text">genre</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button class="btn">Plus de films</button>
+          </div>
+        </div>
+      </section>
+      <!-- Shop movies -->
+      <section class="container">
+        <div class="row">
+          <div class="col">
+            <h2>shop movies</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button class="btn">Previous</button>
+            <button class="btn">Next</button>
+          </div>
+        </div>
+        <div class="container d-flex flex-row">
+          <div class="container col-8">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="card-footer">
+                    <h6 class="card-title">title</h6>
+                    <p class="card-text">date</p>
+                    <p class="card-text">price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="card-footer">
+                    <h6 class="card-title">title</h6>
+                    <p class="card-text">date</p>
+                    <p class="card-text">price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="card-footer">
+                    <h6 class="card-title">title</h6>
+                    <p class="card-text">date</p>
+                    <p class="card-text">price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="card-footer">
+                    <h6 class="card-title">title</h6>
+                    <p class="card-text">date</p>
+                    <p class="card-text">price</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="card-footer">
+                    <h6 class="card-title">title</h6>
+                    <p class="card-text">date</p>
+                    <p class="card-text">price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="card-footer">
+                    <h6 class="card-title">title</h6>
+                    <p class="card-text">date</p>
+                    <p class="card-text">price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="card-footer">
+                    <h6 class="card-title">title</h6>
+                    <p class="card-text">date</p>
+                    <p class="card-text">price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="card-footer">
+                    <h6 class="card-title">title</h6>
+                    <p class="card-text">date</p>
+                    <p class="card-text">price</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container col-4">
+            <div class="row h-100">
+              <div class="col">
+                <div class="card h-100">
+                  <div>video</div>
+                  <div>title</div>
+                  <div>storyline</div>
+                  <div>release date</div>
+                  <div>genre(s)</div>
+                  <div>price</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="container">
+        <div class="row">
+          <div class="col">
+            <h2>contact us</h2>
+          </div>
+        </div>
+        <!-- Form -->
+        <form>
+          <!-- First name / last name -->
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="contact-first-name">First name</label>
+                <input type="text" class="form-control" id="contact-first-name" aria-describedby="contact-first-name" placeholder="Boaty">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="contact-last-name">Last name</label>
+                <input type="text" class="form-control" id="contact-last-name" aria-describedby="contact-first-name" placeholder="McBoatface">
+              </div>
+            </div>
+          </div>
+          <!-- Email / subject -->
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="contact-email">Email address</label>
+                <input type="email" class="form-control" id="contact-email" aria-describedby="contact-email" placeholder="email@email.com">
+                <small id="email-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" class="form-control" id="contact-subject" aria-describedby="contact-subject" placeholder="Are ladybugs edible?">
+              </div>
+            </div>
+          </div>
+          <!-- Message -->
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea class="form-control" id="contact-message" rows="4" placeholder="Dear diary..."></textarea>
+              </div>
+            </div>
+          </div>
+          <!-- Submit button -->
+          <div class="row">
+            <div class="col">
+              <button type="submit" class="btn">Send message</button>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
+    <footer>
+      
+    </footer>
   </body>
 </html>
