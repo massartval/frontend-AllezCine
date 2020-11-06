@@ -1,4 +1,4 @@
-// On Load
+// On Load //
 
 //   Populate Jumbotron
 
@@ -6,9 +6,11 @@
 
 //   Confirm cookies
 // https://www.jqueryscript.net/other/GDPR-Cookie-Consent-Bootstrap-4-bsgdprcookies.html
-document.getElementById("body").bsgdprcookies();
-
-// On Click
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("body").bsgdprcookies();
+});
+12555555555;
+// On Click //
 
 //   Register form
 
