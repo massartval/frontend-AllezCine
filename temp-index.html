@@ -106,8 +106,8 @@
         <div class="row">
           <div class="col-4">
             <i class="fas fa-phone-square-alt">(+000) 009 455 4068</i>
-            <button id="login" class="btn">login</button>
-            <button id="register" class="btn">register</button>
+            <button class="btn" id="login" data-toggle="modal" data-target="#loginModal">Login</button>
+            <button class="btn" id="register" data-toggle="modal" data-target="#registerModal">Register</button>
           </div>
         </div>
       </div>
@@ -539,7 +539,224 @@
       </section>
     </main>
     <footer>
+      <!-- Subscribe -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h2>subrscribe to us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="col">
+              <input type="email" class="form-control" id="subscribe-email" aria-describedby="subscribe-email" placeholder="email@email.com">
+            </div>
+          </div>
+        </div>
+        <!-- Lists -->
+        <div class="row">
+          <div class="col">
+            <div>
+              <h5>Release</h5>
+              <ul>
+                <li>2020</li>
+                <li>2019</li>
+                <li>2018</li>
+                <li>2017</li>
+                <li>2016</li>
+                <li>2015</li>
+              </ul>
+            </div>
+          </div>
 
+          <div class="col">
+            <div>
+              <h5>Movies</h5>
+              <ul>
+                <li>adventure</li>
+                <li>comedy</li>
+                <li>fantasy</li>
+                <li>action</li>
+                <li>movies</li>
+                <li>horror</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <h5>Review movies</h5>
+              <ul>
+                <li>Comedy</li>
+                <li>Horror</li>
+                <li>Historical</li>
+                <li>Romantic</li>
+                <li>Love</li>
+                <li>Action</li>
+                <li>Reviews</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <h5>Latest movies</h5>
+            <div class="card flex-row">
+              <div class="card-body">
+                <img src="" alt="">
+              </div>
+              <title>title</title>
+            </div>
+            <div class="card flex-row">
+              <div class="card-body">
+                <img src="" alt="">
+              </div>
+              <title>title</title>
+            </div>
+            <div class="card flex-row">
+              <div class="card-body">
+                <img src="" alt="">
+              </div>
+              <title>title</title>
+            </div>
+            <div class="card flex-row">
+              <div class="card-body">
+                <img src="" alt="">
+              </div>
+              <title>title</title>
+            </div>
+          </div>
+          <div class="col">
+            <h3>ALLEZCINE!</h3>
+            <img>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4>connect us</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
+            <li><i class="fab fa-google-plus-g"></i></li>
+          </ul>
+          </div>
+        </div>
+      </div>
     </footer>
+    <!-- Modals -->
+    <!-- Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-title text-center">
+              <h4>Login</h4>
+            </div>
+            <div class="d-flex flex-column text-center">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="username" placeholder="Username" />
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password" placeholder="Password" />
+                </div>
+                <button type="button" class="btn btn-info btn-block btn-round">Ok</button>
+                <button type="button" class="btn btn-info btn-block btn-round">Create account</button>
+                <div>
+                  <input type="checkbox" class="form-control" id="stay-connected" />
+                  <label for="stay-connected">Stay connected</label>
+                </div>
+                <div class="form-group">
+                  <a href="">Forgot password</a>
+                </div>
+                <button type="button" class="btn btn-info btn-block btn-round">Cancel</button>
+              </form>
+
+              <div class="text-center text-muted delimiter">or use a social network</div>
+              <div class="d-flex justify-content-center social-buttons">
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </button>
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </button>
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                  <i class="fab fa-linkedin"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-title text-center">
+              <h4>Register</h4>
+            </div>
+            <div class="d-flex flex-column text-center">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="username1" placeholder="enter username" />
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="enter email" />
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password1" placeholder="enter password" />
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password2" placeholder="confirm password" />
+                </div>
+                <div>
+                  <input type="checkbox" class="form-control" id="conditions" />
+                  <label for="conditions">I have read and agree with the conditions</label>
+                </div>
+                <button type="button" class="btn btn-info btn-block btn-round">Register</button>
+              </form>
+
+              <div class="text-center text-muted delimiter">or use a social network</div>
+              <div class="d-flex justify-content-center social-buttons">
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </button>
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </button>
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                  <i class="fab fa-linkedin"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GDPR -->
+    <script src="jquery.bs.gdpr.cookies.js"></script>
+    <!-- Attention le script ci-dessus doit se trouver après jQuery -->
   </body>
 </html>
