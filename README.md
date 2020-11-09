@@ -20,6 +20,10 @@ Ce projet a été réalisé par [] et [massartval]() dans le cadre de leur forma
 
 ### JS
 
+- Fonction arrowToTop crée des boutons à l'infini
+
+- Fonction arrowToTop ne ramène pas le viewport en haut de page
+
 Manquent :
 
 - Fonctions pour peupler le jumbotron et les cards

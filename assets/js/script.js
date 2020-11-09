@@ -6,10 +6,9 @@
 
 //   Confirm cookies
 // https://www.jqueryscript.net/other/GDPR-Cookie-Consent-Bootstrap-4-bsgdprcookies.html
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("body").bsgdprcookies();
-});
-12555555555;
+});*/
 // On Click //
 
 //   Register form
