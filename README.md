@@ -1,20 +1,8 @@
 # frontend-AllezCine
 
-## Plan du site
+## Description
 
-- Sections
-- Nav
-- Header
-- Jumbotron
-- Boutons réseaux sociaux
-- Films
-- Featured movies
-- Shop movies
-- Contact us
-- Footer
-
-- API The Movie Database
-  https://developers.themoviedb.org/3/getting-started/introduction
+Ce projet a été réalisé par [] et [massartval]() dans le cadre de leur formation comme développeur web chez [BeCode]().
 
 ## Problèmes encore à résoudre :
 
@@ -36,6 +24,7 @@ Manquent :
 
 - Fonctions pour peupler le jumbotron et les cards
 
-- API
+- API The Movie Database
+  https://developers.themoviedb.org/3/getting-started/introduction
 
 - Fonction pour la newsletter
