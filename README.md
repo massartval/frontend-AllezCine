@@ -32,6 +32,10 @@
 
 ### JS
 
+Manquent :
+
 - Fonctions pour peupler le jumbotron et les cards
 
 - API
+
+- Fonction pour la newsletter
