@@ -1,12 +1,14 @@
 /* --- Normalize --- */
-
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 a {
@@ -28,7 +30,6 @@ ol {
 }
 
 /* --- Global --- */
-
 /*
 [class^="container"] {
     border: 3px solid #999999;
@@ -46,9 +47,9 @@ ol {
     background-color: #999999;
   }
 */
-
 :root {
-  /*  font-size: px; */ /* 1em = ?px !!! Not cool for accessibility !!! */
+  /*  font-size: px; */
+  /* 1em = ?px !!! Not cool for accessibility !!! */
   --primary-color: ;
   --secondary-color: ;
   --tertiary-color: ;
@@ -59,20 +60,11 @@ ol {
 }
 
 /* WARNING - SCSS variables should be declared outside of any selector and can't be left empty */
-
-$primary-color: white;
-$secondary-color: #ff423e;
-$tertiary-color: #4c5155;
-$quaternary-color: #0d0d0d;
-
 /* --- Layout (see HTML) --- */
-
 /* --- Styling --- */
-
 /*  General rules */
-
 body {
-  color: $tertiary-color;
+  color: #4c5155;
 }
 
 h1,
@@ -85,7 +77,7 @@ h6 {
 }
 
 main h2 {
-  border-left: 3px solid $secondary-color;
+  border-left: 3px solid #ff423e;
   padding-left: 1rem;
 }
 
@@ -99,38 +91,36 @@ section {
 }
 
 .btn {
-  background-color: $secondary-color;
-  color: $primary-color;
+  background-color: #ff423e;
+  color: white;
 }
 
 li i {
-  border: 1px solid $tertiary-color;
+  border: 1px solid #4c5155;
   margin: 0.25rem;
   padding: 0.5rem;
 }
 
 /* Exceptions */
-
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: $tertiary-color;
+  background-color: #4c5155;
 }
 
-header {
-  .container-fluid {
-    .row:last-child {
-      background-color: $secondary-color;
-      .btn {
-        background-color: $quaternary-color;
-      }
-    }
-  }
+header .container-fluid .row:last-child {
+  background-color: #ff423e;
+}
+
+header .container-fluid .row:last-child .btn {
+  background-color: #0d0d0d;
 }
 
 footer {
-  background-color: $quaternary-color;
-  color: $tertiary-color;
-  h2 {
-    color: $secondary-color;
-  }
+  background-color: #0d0d0d;
+  color: #4c5155;
 }
+
+footer h2 {
+  color: #ff423e;
+}
+/*# sourceMappingURL=style.css.map */
