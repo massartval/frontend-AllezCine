@@ -1,94 +1,136 @@
-/* --- Normalize --- */ 
+/* --- Normalize --- */
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-figure, p {
-    margin: 0;
-    padding: 0;
+figure,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-ul, ol {
-    list-style-type: none;
-    padding: 0; 
-    margin: 0;
-}
-
-/* --- Media Queries */ 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    body {
-        background: green;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    body {
-        background: blue;
-    }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    body {
-        background: orange;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    body {
-        background: pink;
-    }
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* --- Global --- */
 
+/*
+[class^="container"] {
+    border: 3px solid #999999;
+  }
+  .row {
+    border: 2px solid #7451eb;
+  }
+  [class^="col"] {
+    border: 1px solid #3fa5db;
+  }
+  .card {
+    border: 1px solid #e1eb51;
+  }
+  .card-body {
+    background-color: #999999;
+  }
+*/
+
 :root {
-/*  font-size: px; */    /* 1em = ?px !!! Not cool for accessibility !!! */
-    --primary-color: ;
-    --secondary-color: ;
-    --tertiary-color: ;
-    --text-color: ;
-    --shadow-color: ;
-    --border-radius: em;
-    --main-padding: em;
+  /*  font-size: px; */ /* 1em = ?px !!! Not cool for accessibility !!! */
+  --primary-color: ;
+  --secondary-color: ;
+  --tertiary-color: ;
+  --text-color: ;
+  --shadow-color: ;
+  --border-radius: em;
+  --main-padding: em;
 }
 
 /* WARNING - SCSS variables should be declared outside of any selector and can't be left empty */
 
 $primary-color: white;
-$secondary-color: red;
-$tertiary-color: lightgray;
-$text-color: black;
+$secondary-color: #ff423e;
+$tertiary-color: #4c5155;
+$quaternary-color: #0d0d0d;
 
-
-/* --- Layout --- */
-
-body {}
+/* --- Layout (see HTML) --- */
 
 /* --- Styling --- */
 
-header {}
+/*  General rules */
 
-main {}
+body {
+  color: $tertiary-color;
+}
 
-footer {}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+main h2 {
+  border-left: 3px solid $secondary-color;
+  padding-left: 1rem;
+}
+
+header,
+section {
+  margin-bottom: 1rem;
+}
+
+.row {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+li i {
+  border: 1px solid $tertiary-color;
+  margin: 0.25rem;
+  padding: 0.5rem;
+}
+
+/* Exceptions */
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: $tertiary-color;
+}
+
+header {
+  .container-fluid {
+    .row:last-child {
+      background-color: $secondary-color;
+      .btn {
+        background-color: $quaternary-color;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $quaternary-color;
+  color: $tertiary-color;
+  h2 {
+    color: $secondary-color;
+  }
+}
