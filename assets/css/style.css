@@ -1,0 +1,126 @@
+/* --- Normalize --- */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+figure,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Global --- */
+/*
+[class^="container"] {
+    border: 3px solid #999999;
+  }
+  .row {
+    border: 2px solid #7451eb;
+  }
+  [class^="col"] {
+    border: 1px solid #3fa5db;
+  }
+  .card {
+    border: 1px solid #e1eb51;
+  }
+  .card-body {
+    background-color: #999999;
+  }
+*/
+:root {
+  /*  font-size: px; */
+  /* 1em = ?px !!! Not cool for accessibility !!! */
+  --primary-color: ;
+  --secondary-color: ;
+  --tertiary-color: ;
+  --text-color: ;
+  --shadow-color: ;
+  --border-radius: em;
+  --main-padding: em;
+}
+
+/* WARNING - SCSS variables should be declared outside of any selector and can't be left empty */
+/* --- Layout (see HTML) --- */
+/* --- Styling --- */
+/*  General rules */
+body {
+  color: #4c5155;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+main h2 {
+  border-left: 3px solid #ff423e;
+  padding-left: 1rem;
+}
+
+header,
+section {
+  margin-bottom: 1rem;
+}
+
+.row {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  background-color: #ff423e;
+  color: white;
+}
+
+li i {
+  border: 1px solid #4c5155;
+  margin: 0.25rem;
+  padding: 0.5rem;
+}
+
+/* Exceptions */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #4c5155;
+}
+
+header .container-fluid .row:last-child {
+  background-color: #ff423e;
+}
+
+header .container-fluid .row:last-child .btn {
+  background-color: #0d0d0d;
+}
+
+footer {
+  background-color: #0d0d0d;
+  color: #4c5155;
+}
+
+footer h2 {
+  color: #ff423e;
+}
+/*# sourceMappingURL=style.css.map */
